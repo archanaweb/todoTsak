@@ -7,6 +7,7 @@ const Todo = ()=> {
 
     const addItem =()=> {
         setTodoList([...todoList, item])
+        setItem("");
     }
     const deleteItem = (i)=> {
         const updatedList = todoList.filter((item, ind)=> i !== ind);
@@ -23,10 +24,11 @@ const Todo = ()=> {
                 onChange={(e)=>setItem(e.target.value)}>
                 </input>
                 <button onClick={addItem}>Add</button>
-                <p>{item}</p>
+             {/* <hr /> */}
             </div>
 
             <div className="listItem">
+                
                 <ul>
                 {todoList.map((item,i)=>{
                     return(

@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+ul li{
+  padding: 4px 0;
+}
+.listItem{
+  padding-top: 20px;
+}
